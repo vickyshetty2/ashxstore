@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clothinn — Streetwear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="./assets/logo.png" alt="Clothinn" class="brand-logo site-logo" data-logo-light="./assets/logo.png" data-logo-dark="./assets/logo-dark.png">
+      </a>
+      <nav class="site-nav">
+        <button id="themeToggle" aria-label="Toggle theme">☾</button>
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount" class="badge">0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="notice-banner" role="alert">
+        We have stopped selling all Seedhe Maut related designs following a legal notice. Thanks for your understanding.
+      </div>
+      
+      <section id="products-hoodies" class="products">
+        <div class="section-head">
+          <h2>Hoodies</h2>
+        </div>
+        <div id="productGridHoodies" class="grid"></div>
+      </section>
+
+      <section id="products-oversize" class="products">
+        <div class="section-head">
+          <h2>SM Oversize T-Shirts</h2>
+        </div>
+        <div id="productGridOversize" class="grid">
+          <div class="muted">This collection has been removed.</div>
+        </div>
+      </section>
+
+      <section id="products-oversize-other" class="products">
+        <div class="section-head">
+          <h2>Oversize T-Shirts</h2>
+        </div>
+        <div id="productGridOversizeOther" class="grid"></div>
+      </section>
+
+      <section id="products-regular" class="products">
+        <div class="section-head">
+          <h2>Round Neck Tees</h2>
+        </div>
+        <div id="productGridRegular" class="grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="./assets/logo-dark.png" alt="Brand" class="footer-logo">
+            <div class="footer-subscribe">
+              <strong>Subscribe now</strong>
+              <input type="email" placeholder="Enter your email address" aria-label="Email address">
+            </div>
+          </div>
+          <div class="footer-links">
+            <strong>Quick Links</strong>
+            <a href="index.html">Home</a>
+            <a href="#products-oversize">Shop</a>
+            <a href="#products-regular">Round Necks</a>
+            <a href="#products-hoodies">Hoodies</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">T&C</a>
+          </div>
+          <div class="footer-contact">
+            <strong>Get in touch</strong>
+            <div>Support: <a href="mailto:ashxstore19@gmail.com">ashxstore19@gmail.com</a></div>
+            <div><strong>Reach us</strong></div>
+            <div>Bengaluru</div>
+          </div>
+        </div>
+        <div class="footer-badges">
+          <span class="footer-badge">🚚 Free Shipping</span>
+          <span class="footer-badge">🔁 Easy Exchanges</span>
+        </div>
+        <div>© <span id="year"></span> Clothinn. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Global Size Chart Modal -->
+    <div id="sizeChart" class="modal" aria-hidden="true" role="dialog" aria-label="Size chart">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-dialog" role="document">
+        <button class="modal-close" aria-label="Close" data-close>×</button>
+        <img src="./assets/tees/IMG_1237.jpg" alt="Size chart" class="modal-image">
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout — Clothinn</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="./assets/logo.png" alt="Clothinn" class="brand-logo site-logo" data-logo-light="./assets/logo.png" data-logo-dark="./assets/logo-dark.png">
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <main class="checkout">
+      <div class="section-head">
+        <h1>Shipping details</h1>
+        <p>Fill your address. We'll send your order to WhatsApp to confirm.</p>
+      </div>
+
+      <div class="checkout-layout">
+        <form id="addressForm" class="card">
+          <div class="grid grid-form">
+            <label>
+              <span>Full name</span>
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              <span>Phone number</span>
+              <input type="tel" name="phone" required>
+            </label>
+            <label class="col-span-2">
+              <span>House / Flat / Apt</span>
+              <input type="text" name="line1" required>
+            </label>
+            <label class="col-span-2">
+              <span>Road / Area</span>
+              <input type="text" name="line2" required>
+            </label>
+            <label class="col-span-2">
+              <span>Directions to reach (optional)</span>
+              <input type="text" name="directions" placeholder="Landmark or notes">
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              <span>City</span>
+              <input type="text" name="city" required>
+            </label>
+            <label>
+              <span>State</span>
+              <input type="text" name="state" required>
+            </label>
+            <label>
+              <span>ZIP Code</span>
+              <input type="text" name="zip" required>
+            </label>
+            
+          </div>
+          <button type="submit" class="btn btn-primary">Send order by WhatsApp</button>
+          <p class="muted">We will open WhatsApp with your order summary to +91 8431014886. Verify and send.</p>
+        </form>
+
+        <aside class="card order-summary">
+          <h2>Order summary</h2>
+          <div id="summaryItems" class="summary-items"></div>
+          <div class="summary-row"><span>Subtotal</span><span id="summarySubtotal">—</span></div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="./assets/logo-dark.png" alt="Brand" class="footer-logo">
+            <div class="footer-subscribe">
+              <strong>Subscribe now</strong>
+              <input type="email" placeholder="Enter your email address" aria-label="Email address">
+            </div>
+          </div>
+          <div class="footer-links">
+            <strong>Quick Links</strong>
+            <a href="index.html">Home</a>
+            <a href="index.html#products-oversize">Shop</a>
+            <a href="index.html#products-regular">Round Necks</a>
+            <a href="index.html#products-hoodies">Hoodies</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">T&C</a>
+          </div>
+          <div class="footer-contact">
+            <strong>Get in touch</strong>
+            <div>Support: <a href="mailto:ashxstore19@gmail.com">ashxstore19@gmail.com</a></div>
+            <div><strong>Reach us</strong></div>
+            <div>Bengaluru</div>
+          </div>
+        </div>
+        <div class="footer-badges">
+          <span class="footer-badge">🚚 Free Shipping</span>
+          <span class="footer-badge">🔁 Easy Exchanges</span>
+        </div>
+        <div>© <span id="year"></span> Clothinn. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
